@@ -1,0 +1,264 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: black;
+}
+
+body .BarraPrincipal {
+    background-color: mediumpurple;
+    display: grid;
+    font-family: 'Merriweather Sans', sans-serif;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+}
+
+body .BarraPrincipal .BarraItems {
+    align-items: center;
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    justify-content: center;
+    color: black;
+    width: 100%;
+}
+
+body .BarraItems .Page1 a {
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    justify-content: center;
+    padding-inline: 20px;
+    text-decoration: none;
+}
+
+body .BarraItems .Page1 a > span {
+    color: #ffffff;
+    border: 1.5px solid transparent;
+    width: 85%;
+}
+
+body .BarraItems .Page1 a:hover {
+    align-items: start;
+    color: violet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+body .BarraItems .material-symbols-outlined {
+    display: none;
+}
+
+body .Now {
+    align-items: start;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+body .Now .Card {
+    align-items: start;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    justify-content: center;
+    width: 1100px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+body .Now .Card .Titulo-Card1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    padding: 0px;
+}
+
+body .Now .Card > p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    padding: 0px;
+}
+
+body .Bar2 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 24px 0px;
+}
+
+body .Bar2 > span {
+    border: 1.5px solid white;
+    width: 95%;
+}
+
+body .Footer {
+    background: rebeccapurple;
+    color: #ffffff;
+    display: flex;
+    height: 240px;
+    padding: 20px 200px;
+}
+
+body .Footer .Contenido {
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+body .Footer .Contenido > p {
+    text-align: center;
+    font-size: large;
+    padding: 24px 0px;
+    width: 100%;
+}
+
+body .Footer .Contenido .Button {
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+body .Footer .Contenido .Button > h6 {
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0px;
+    padding: 12px 0px;
+}
+
+body .Footer .Contenido .Button > p {
+    background-color: white;
+    border-radius: 30px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 16px 40px;
+}
+
+body .Footer .Contenido .Button > p:hover {
+    background-color: black;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 16px 40px;
+}
+
+body .Footer .Contenido .Button > span {
+    padding-left: 240px;
+}
+
+body .Center {
+    background: rebeccapurple;
+    display: flex;
+}
+
+body .Center .Redes {
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+body .Center .Redes > span {
+    padding: 0px 20px;
+    padding-bottom: 48px;
+}
+
+body .Center .Redes img {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 830px) {
+    body .BarraPrincipal .BarraItems .material-symbols-outlined {
+        display: unset;
+        color: rebeccapurple;
+    }
+
+    body .BarraPrincipal .BarraItems .Page1 {
+        display: none;
+    }
+
+    body .Now .Card {
+        height: 400px;
+    }
+
+    body .Now .Card .Titulo-Card1 {
+        font-size: 28px;
+    }
+
+    body .Now .Card > p {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    body .BarraPrincipal .BarraItems .material-symbols-outlined {
+        display: unset;
+        color: rebeccapurple;
+    }
+
+    body .BarraPrincipal .BarraItems .Page1 {
+        display: none;
+    }
+
+    body .Now .Card {
+        height: 400px;
+    }
+
+    body .Now .Card .Titulo-Card1 {
+        font-size: 20px;
+    }
+
+    body .Now .Card > p {
+        font-size: 16px;
+    }
+
+    body .Footer {
+        padding: 12px 12px;
+    }
+
+    body .Footer .Contenido > p {
+        font-size: small;
+        padding: 0px 0px;
+    }
+
+    body .Footer .Contenido .Button > h6 {
+        cursor: pointer;
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+    
+    body .Footer .Contenido .Button > p {
+        cursor: pointer;
+        font-size: 10px;
+        padding: 12px 0px;
+    }
+    
+    body .Footer .Contenido .Button > p:hover {
+        cursor: pointer;
+        font-size: 10px;
+        padding: 12px 0px;
+    }
+}
